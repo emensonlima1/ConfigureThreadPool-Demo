@@ -12,7 +12,7 @@ var task = Task.Run(MonitorThreadPool);
 
 while (true)
 {
-    Parallel.ForEach(keysAndValues, new ParallelOptions { MaxDegreeOfParallelism = 10000 }, async kvp =>
+    Parallel.ForEach(keysAndValues, new ParallelOptions { MaxDegreeOfParallelism = 10000 }, kvp =>
     {
     });
 }
